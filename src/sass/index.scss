@@ -1,0 +1,8 @@
+$body-color: red;
+@use '_nav_bar';
+
+body {
+  color: $body-color;
+  width: 100vw;
+  height: 100vh;
+}
