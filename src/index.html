@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+    <title>Document</title>
+</head>
+
+<body class="flex">
+    <header class="flex">
+        <nav class="nav_bar flex">
+            <figure class="logo">🥗</figure>
+            <ul class="nav_list flex">
+                <li class="nav_list_li cont_meals">Meals</li>
+                <li class="nav_list_li">About Us</li>
+                <li class="nav_list_li">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="modal-container"><div id="reservation_modal"></div></div>
+        <div class="cards_container flex" id="data"></div>
+        <div id="myModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal_header flex">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                        <button type="button" class="btn-close flex" data-bs-dismiss="modal" aria-label="Close"
+                            id="closeModal">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-content" id="mondalContent"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="flex">
+        <div class="footer_container flex">
+            <p class="footer_txt flex">“A recipe has no soul. You, as the cook, must bring soul to the recipe.” - Thomas
+                Keller</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
