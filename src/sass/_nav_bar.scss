@@ -1,3 +1,28 @@
-body {
-    background-color: black;
+$pale-black: #141414;
+$pale-white: #f9f9f9;
+$pale-gray: #5b5b5b;
+$font-s: 1.1rem;
+$font-m: 1.3rem;
+$font-l: 2rem;
+
+nav {
+  padding: 35px 15px;
+  width: 100vw;
+  color: $pale-gray;
+  justify-content: space-between;
+  ul {
+    margin: auto;
+    width: 35%;
+    min-width: 280px;
+    justify-content: space-evenly;
+    li {
+      list-style: none;
+      cursor: pointer;
+      font-size: $font-s;
+      transition: ease-out all 0.5s;
+    }
+    li:hover {
+      color: $pale-white;
+    }
+  }
 }
