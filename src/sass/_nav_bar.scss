@@ -8,7 +8,6 @@ $font-l: 2rem;
 nav {
   padding: 35px 15px;
   width: 100vw;
-  color: $pale-gray;
   justify-content: space-between;
   ul {
     margin: auto;
@@ -16,13 +15,17 @@ nav {
     min-width: 280px;
     justify-content: space-evenly;
     li {
+      a {
+        text-decoration: none;
+        color: $pale-gray;
+      }
+      a:hover {
+        color: $pale-white;
+      }
       list-style: none;
       cursor: pointer;
       font-size: $font-m;
       transition: ease-out all 0.5s;
-    }
-    li:hover {
-      color: $pale-white;
     }
   }
 }

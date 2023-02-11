@@ -1,7 +1,7 @@
 const cursor = document.querySelector('.cursor');
-const work = document.querySelector('.work');
-const about = document.querySelector('.about');
-const contact = document.querySelector('.contact');
+const work = document.getElementById('work');
+const about = document.getElementById('about');
+const contact = document.getElementById('contact');
 
 document.onmousemove = (e) => {
   cursor.style.display = 'block';

@@ -6,7 +6,10 @@ $pale-white: #f9f9f9;
 $pale-gray: #5b5b5b;
 
 main {
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
   section {
+    scroll-snap-align: center;
     width: 100%;
     height: 100vh;
     margin: auto;
@@ -33,7 +36,7 @@ main {
         p {
           line-height: 3rem;
           width: 100%;
-          font-size: 2.5rem;
+          font-size: 2.3rem;
         }
       }
     }
@@ -42,31 +45,59 @@ main {
 
 .work_experience {
   flex-direction: column;
-  margin-top: 100px;
   h2 {
-    font-size: 2.5rem;
-    margin: 20px 0;
+    font-size: 2.8rem;
+    margin: 30px 0;
   }
   ul {
     li {
       list-style: none;
-      font-size: $font-s;
+      font-size: $font-m;
       margin: 20px 0;
       span {
         color: $pale-gray;
       }
     }
   }
-}
-
-.left_side {
-  width: 35%;
-  article {
-    margin: auto;
+  .btn_cont {
+    margin: 60px 0;
+    align-items: center;
+    .cv_btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 20px;
+      background-color: #272727;
+      border: none;
+      color: $pale-white;
+      cursor: pointer;
+      transition: ease-out all 0.3s;
+    }
+    .cv_btn:hover {
+      background-color: $pale-gray;
+    }
+    .cv_btn:active {
+      transform: scale(1.1);
+    }
+    p {
+      font-size: $font-m;
+    }
   }
 }
 
+.left_side {
+  margin: 100px;
+  width: 38%;
+}
+
 .right_side {
-  margin-top: 120px;
-  width: 65%;
+  margin-top: 100px;
+  width: 62%;
+  max-width: 1000px;
+}
+
+.work_section {
+  padding: 5%;
+  justify-content: center;
+  padding-left: 100px;
 }
